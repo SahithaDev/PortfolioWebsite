@@ -18,13 +18,17 @@ const Project2 = () => {
         </div>
         <div className="flex gap-10 py-5 px-auto">
           <a href="https://github.com/SahithaDev/Foodie" target="_blank">
-            <button className="bg-orange-500 text-white rounded-2xl font-semibold p-2">
-              GitHub🔗
-            </button>
+            <motion.div whileHover={{ scale: 1.1 }}>
+              <button className="bg-orange-500 text-white rounded-2xl font-semibold p-2">
+                GitHub🔗
+              </button>
+            </motion.div>
           </a>
-          <button className="bg-orange-500 font-semibold text-white rounded-2xl p-2">
-            Live Demo
-          </button>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <button className="bg-white font-semibold text-black border-black border-2 rounded-2xl p-2">
+              Live Demo
+            </button>
+          </motion.div>
         </div>
       </div>
     </motion.div>

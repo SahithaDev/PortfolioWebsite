@@ -34,7 +34,7 @@ const Body = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOutIn" }}
           >
-            <p className="text-lg m-5 font-semibold font-mono text-center">
+            <p className="text-2xl m-5 font-semibold font-mono text-center">
               <TypeWriter />
             </p>
           </motion.div>

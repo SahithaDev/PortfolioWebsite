@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import { Link, Element } from "react-scroll";
+import { motion } from "framer-motion";
 // import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
           <Logo />
         </div>
         <div>
-          <ul className="flex gap-10 m-4 items-center text-white font-semibold">
+          <ul className="flex gap-10 m-4 items-center text-gray-300 transition-colors hover:text-white font-semibold">
             <li>
               <Link to="body" smooth={true} duration={500} offset={-100}>
                 Home
@@ -36,11 +37,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <button className="bg-orange-500 rounded-2xl p-2">
-                <Link to="connect" smooth={true} duration={500} offset={-100}>
-                  Let's Connect
-                </Link>
-              </button>
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <button className="bg-orange-500 rounded-2xl hover:bg bg-orange-600 transition p-2">
+                  <Link to="connect" smooth={true} duration={500} offset={-100}>
+                    Let's Connect
+                  </Link>
+                </button>
+              </motion.div>
             </li>
           </ul>
         </div>
